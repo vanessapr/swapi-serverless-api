@@ -1,6 +1,6 @@
-const { create, list } = require('./api');
+const ApiController = require('./api');
 
 module.exports = {
-  create,
-  list,
+  create: (event) => ApiController.create(event),
+  list: () => ApiController.list(),
 };
