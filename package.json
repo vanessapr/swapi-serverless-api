@@ -17,9 +17,14 @@
   "author": "",
   "license": "MIT",
   "description": "",
+  "engines": {
+    "node": ">=10"
+  },
   "dependencies": {
     "aws-sdk": "^2.828.0",
-    "serverless": "^2.18.0"
+    "moment": "^2.29.1",
+    "serverless": "^2.18.0",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "eslint": "^7.17.0",

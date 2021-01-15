@@ -9,7 +9,7 @@ provider:
   region: us-east-2
   stage: dev
   environment:
-    CANDIDATE_TABLE: ${self:service}-${opt:stage, self:provider.stage}
+    STARSHIP_TABLE: ${self:service}-${opt:stage, self:provider.stage}
   iamRoleStatements:
     - Effect: Allow
       Action:
@@ -25,14 +25,14 @@ functions:
     handler: src/index.create
     events:
       - http:
-          path: films
+          path: starships
           method: post
           cors: true
   list:
     handler: src/index.list
     events:
       - http:
-          path: films
+          path: starships
           method: get
           cors: true
 resources:
@@ -52,4 +52,4 @@ resources:
         ProvisionedThroughput:
           ReadCapacityUnits: 1
           WriteCapacityUnits: 1
-        TableName: ${self:provider.environment.CANDIDATE_TABLE}
+        TableName: ${self:provider.environment.STARSHIP_TABLE}
