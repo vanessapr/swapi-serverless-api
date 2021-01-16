@@ -1,0 +1,60 @@
+[
+  {
+    "nombre": "Death Star",
+    "modelo": "DS-1 Orbital Battle Station",
+    "fabricante": "Imperial Department of Military Research, Sienar Fleet Systems",
+    "costoEnCreditos": "1000000000000",
+    "longitud": "120000",
+    "tripulacion": "342953",
+    "pasajeros": "843342",
+    "capacidadCarga": "1000000000000",
+    "consumibles": "3 years",
+    "pilotos": [],
+    "peliculas": ["https://swapi.py4e.com/api/films/1/"],
+    "url": "https://swapi.py4e.com/api/starships/9/"
+  },
+  {
+    "nombre": "CR90 corvette",
+    "modelo": "CR90 corvette",
+    "fabricante": "Corellian Engineering Corporation",
+    "costoEnCreditos": "3500000",
+    "longitud": "150",
+    "maxVelocidadAmostferica": "950",
+    "tripulacion": "30-165",
+    "pasajeros": "600",
+    "capacidadCarga": "3000000",
+    "consumibles": "1 year",
+    "clase": "corvette",
+    "pilotos": [],
+    "peliculas": [
+        "https://swapi.py4e.com/api/films/1/",
+        "https://swapi.py4e.com/api/films/3/",
+        "https://swapi.py4e.com/api/films/6/"
+    ],
+    "creado": "2014-12-10T14:20:33.369000Z",
+    "editado": "2014-12-20T21:23:49.867000Z",
+    "url": "https://swapi.py4e.com/api/starships/2/"
+  },
+  {
+    "nombre": "Star Destroyer",
+    "modelo": "Imperial I-class Star Destroyer",
+    "fabricante": "Kuat Drive Yards",
+    "costoEnCreditos": "150000000",
+    "longitud": "1,600",
+    "maxVelocidadAmostferica": "975",
+    "tripulacion": "47,060",
+    "pasajeros": "n/a",
+    "capacidadCarga": "36000000",
+    "consumibles": "2 years",
+    "clase": "Star Destroyer",
+    "pilotos": [],
+    "peliculas": [
+        "https://swapi.py4e.com/api/films/1/",
+        "https://swapi.py4e.com/api/films/2/",
+        "https://swapi.py4e.com/api/films/3/"
+    ],
+    "creado": "2014-12-10T15:08:19.848000Z",
+    "editado": "2014-12-20T21:23:49.870000Z",
+    "url": "https://swapi.py4e.com/api/starships/3/"
+  }
+]

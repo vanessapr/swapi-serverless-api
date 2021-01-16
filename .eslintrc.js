@@ -2,11 +2,21 @@ module.exports = {
   env: {
     commonjs: true,
     es2021: true,
+    node: true,
+    mocha: true,
   },
   extends: ['airbnb-base', 'plugin:prettier/recommended'],
   parserOptions: {
     ecmaVersion: 12,
   },
+  overrides: [
+    {
+      files: ['*.test.js', '*.spec.js'],
+      rules: {
+        'no-unused-expressions': 'off',
+      },
+    },
+  ],
   rules: {
     'prettier/prettier': 'warn',
     'max-classes-per-file': 'off',
