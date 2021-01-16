@@ -1,10 +1,9 @@
 const StarshipEntity = require('./domain/starship');
-const StarshipRepository = require('./domain/repository');
 const { EntryValidationException } = require('./core/exceptions');
 
 class ApiController {
-  constructor() {
-    this.repository = new StarshipRepository();
+  constructor(repository) {
+    this.repository = repository;
   }
 
   async create(event) {
@@ -42,4 +41,4 @@ class ApiController {
   }
 }
 
-module.exports = new ApiController();
+module.exports = ApiController;
