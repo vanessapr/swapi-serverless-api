@@ -6,7 +6,7 @@
     "deploy": "sls deploy -v",
     "undeploy": "sls remove",
     "lint": "eslint src/**/*.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha 'src/**/*.spec.js'"
   },
   "husky": {
     "hooks": {
@@ -27,12 +27,15 @@
     "uuid": "^8.3.2"
   },
   "devDependencies": {
+    "chai": "^4.2.0",
     "eslint": "^7.17.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^7.1.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-prettier": "^3.3.1",
     "husky": "^4.3.7",
-    "prettier": "^2.2.1"
+    "mocha": "^8.2.1",
+    "prettier": "^2.2.1",
+    "sinon": "^9.2.3"
   }
 }
